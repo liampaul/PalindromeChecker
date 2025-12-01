@@ -14,16 +14,15 @@ public void setup()
     }
   }
 }
-public boolean palindrome(String word)
+public boolean palindrome(String str)
 {
-  //your code here
-  return false;
+  String s = "";
+  for(int i = 0; i < str.length(); i++) if(str.charAt(i) != str.charAt(str.length()-i-1)) return false;
+  return true;
 }
 public String reverse(String str)
 {
-    String sNew = new String();
-    //your code here
-    return sNew;
+  String s = "";
+  for(int i = str.length()-1; i>-1; i--) s += str.charAt(i)+"";
+  return s;
 }
-
-
